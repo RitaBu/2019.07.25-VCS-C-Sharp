@@ -119,3 +119,69 @@ else
 
 Console.ReadLine();
 ```
+
+7. Parašyti programą, kuri prašo įvesti 3 skaičius ir nustato didžiausią iš jų.
+
+```c#
+Console.WriteLine("Iveskite pirma skaiciu:");
+var skaicius1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite antra skaiciu:");
+var skaicius2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Iveskite trecia skaiciu:");
+var skaicius3 = int.Parse(Console.ReadLine());
+
+if(skaicius1 > skaicius2 && skaicius1 > skaicius3)
+{
+  Console.WriteLine($"{skaicius1} yra didziausias.");
+}
+else if(skaicius2 > skaicius1 && skaicius2 > skaicius3)
+{
+  Console.WriteLine($"{skaicius2} yra didziausias.");
+}
+else 
+{
+  Console.WriteLine($"{skaicius3} yra didziausias.");
+}
+
+Console.ReadLine();
+```
+
+8. Parašyti programą, kuri prašo įvesti mokinio pažymį ir ekrane išspausdina jo apibūdinimą. 
+(10 – puiku, 9-8 – labai gerai, 7-6- gerai, 5 - vidutiniškai, 4 – bent teigiamas, 3-2-1 – labai blogai)
+
+```c#
+Console.WriteLine("Iveskite vaiko pazymi:");
+var pazymys = int.Parse(Console.ReadLine());
+
+switch(pazymys) 
+{
+  case 10:
+    Console.WriteLine("Puiku!");
+    break;
+  case 9:
+  case 8:
+    Console.WriteLine("Laba gerai");
+    break;
+  case 7:
+  case 6:
+    Console.WriteLine("Gerai");
+    break;
+  case 5:
+    Console.WriteLine("Vidutiniškai");
+    break;
+  case 4:
+    Console.WriteLine("Teigiamas");
+    break;
+  case 3: case 2: case 1: //kad uzimtu maziau vietos, galime case surasyt i viena eilute sitaip
+    Console.WriteLine("Labai blogai!");
+    break;
+  default:
+    Console.WriteLine("Tokio pazymio nera vertinimo sistemoje.");
+    break;
+}
+
+Console.ReadLine();
+```
+
