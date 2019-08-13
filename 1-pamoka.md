@@ -7,6 +7,9 @@
 
 //paselectinus norimas eilutes ir CTRL + K + C jas visas užkomentuoja (windows)
 //paselectinus norimas eilutes ir CTRL + K + U jas visas atkomentuoja (windows)
+
+//paselectinus norimas eilutes ir command + / jas visas užkomentuoja/atkomentuoja (mac)
+
 ```
 
 1. Parašyti programą, kuri nuskaito įvestą tekstą ir atspausdina jį ekrane. Atspausdintus duomenis rodyti, kol nepaspaudžiamas ENTER. 
