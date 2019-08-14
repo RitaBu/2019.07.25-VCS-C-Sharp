@@ -297,8 +297,70 @@ Console.ReadLine();
 
 ## ```break``` ir ```continue```
 
+1. Parašykite programą, kuri iteruoja per pirmus 20 natūraliųjų skaičių, skaičiuoja jų sumą ir išeina iš ciklo, kai suma tampa didesnė už 15. (break)
+
+```c#
+int suma = 0;
+
+for (int i = 1; i <= 20; i++)
+{
+    suma += i;
+    Console.WriteLine($"{i}. suma = {suma}");
+
+    if (suma > 15)
+        break;
+}
+```
+
+2. Parašykite programą, kuri išves visus skaičius nuo 1 iki 17, išskyrus 7 ir 13. (continue)
+
+```c#
+for (int i = 1; i <= 17; i++)
+{
+    if(i == 7 || i == 13)
+        continue;
+    Console.WriteLine(i);
+}
+```
 
 ## masyvai
 
-1. 
+1. Parašyti programą, kuri nuskaito 10 elementų į masyvą ir jį atspausdina.
+
+```c#
+int[] skaiciai = new int[10];
+
+for (int i = 0; i < skaiciai.Length; i++)
+{
+    Console.WriteLine("Iveskite skaiciu:");
+    int sk = int.Parse(Console.ReadLine());
+    skaiciai[i] = sk;
+}
+
+for (int i = 0; i < skaiciai.Length; i++)
+{
+    Console.Write($"{skaiciai[i]} ");
+}
+```
+
+2. Parašyti programą, kuri prašo įvesti masyvo dydį ir tada nuskaito n elementų į masyvą ir atspausdina jį atvirkščiai.
+
+```c#
+ Console.WriteLine("Iveskite masyvo dydi:");
+int n = int.Parse(Console.ReadLine());
+
+int[] elementai = new int[n];
+
+for (int i = 0; i < elementai.Length; i++)
+{
+    Console.WriteLine("Iveskite skaiciu:");
+    int sk = int.Parse(Console.ReadLine());
+    elementai[i] = sk;
+}
+
+for (int i = n - 1; i >= 0; i--)
+{
+    Console.Write($"{elementai[i]} ");
+}
+```
 
