@@ -81,22 +81,22 @@ int skaicius2 = int.Parse(Console.ReadLine());
 
 switch(operacija){
     case "+":
-        Console.WriteLine(skaicius1 + " + " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        Console.WriteLine($"{skaicius1} + {skaicius2} = {skaicius1 + skaicius2}");
         break;
     case "-":
-        Console.WriteLine(skaicius1 + " - " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        Console.WriteLine($"{skaicius1} - {skaicius2} = {skaicius1 - skaicius2}");
         break;
     case "*":
-        Console.WriteLine(skaicius1 + " * " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        Console.WriteLine($"{skaicius1} * {skaicius2} = {skaicius1 * skaicius2}");
         break;
     case "/":
-        Console.WriteLine(skaicius1 + " / " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        Console.WriteLine($"{skaicius1} / {skaicius2} = {skaicius1 / skaicius2}");
         break;
     case "%":
-        Console.WriteLine(skaicius1 + " % " + skaicius2 + " = " + (skaicius1 + skaicius2));
+        Console.WriteLine($"{skaicius1} % {skaicius2} = {skaicius1 % skaicius2}");
         break;
     case "^":
-        Console.WriteLine(skaicius1 + " ^ " + skaicius2 + " = " + Math.Pow(skaicius1, skaicius2));
+        Console.WriteLine($"{skaicius1} ^ {skaicius2} = {Math.Pow(skaicius1, skaicius2)}");
         break;
     default:
         Console.WriteLine("Nesuprantu tokios operacijos.");
@@ -145,11 +145,10 @@ else if (operacija == "^")
     rezultatas = Math.Pow(skaicius1, skaicius2);
 }
 
-Console.WriteLine(skaicius1 + " " + operacija + " " + skaicius2 + " = " + rezultatas);
+Console.WriteLine($"{skaicius1} {operacija} {skaicius2} = {rezultatas}");
 
 Console.ReadLine();
 ```
-
 
 ## Ciklas ```while```
 
