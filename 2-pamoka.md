@@ -195,6 +195,79 @@ while(sk > 1)
 Console.WriteLine(Math.Pow(2, laipsnis));
 Console.ReadLine();
 ```
+
 ## Ciklas ```do while```
+
+1. Parašykite programą naudojant do while ciklą, kuri išvestų 10 pirmų natūraliųjų skaičių.
+
+```c#
+int i = 1;
+do 
+{
+    Console.WriteLine(i);
+    i++;
+} 
+while (i <= 10);
+```
+
+2. Parašykite programą naudojant do while ciklą, kuri suskaičiuotų, kiek skaitmenų turi duotas skaičius a.
+
+```c#
+Console.WriteLine("Iveskite skaiciu:");
+int sk = int.Parse(Console.ReadLine());
+
+int skaitmenuSkaicius = 0;
+
+do 
+{
+   sk = sk / 10;
+   skaitmenuSkaicius++;
+} 
+while(sk != 0);
+
+Console.WriteLine($"Skaicius turi {skaitmenuSkaicius} skaitmenu.");
+```
+
+## Ciklas ```for```
+
+1. Parašyti programą naudojant `for` ciklą, kuri suskaičiuoja pirmų 10 natūraliųjų skaičių sumą.
+
+```c#
+int sum = 0;
+for (var i = 1; i <= 10; i++)
+{
+  sum += i;
+}
+Console.WriteLine($"suma: {sum}");
+```
+
+2. Parašyti programą naudojant for ciklą, kuri prašo įvesti natūralųjį skaičių ir atspausdina visus žemesnius natūraliuosius skaičius mažėjančia tvarka.
+
+```c#
+Console.WriteLine("Iveskite skaiciu:");
+int sk = int.Parse(Console.ReadLine());
+
+for (int i = sk - 1; i > 0; i--) 
+{
+    Console.WriteLine(i);
+}
+```
+
+3. Parašyti programą naudojant for ciklą, kuri prašo įvesti skaičių ir atspausdina jo daugybos lentelę.
+
+```c#
+Console.WriteLine("Iveskite skaiciu:");
+int sk = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= 10; i++) 
+{
+    Console.WriteLine($"{sk} * {i} = {sk*i}");
+}
+```
+
+## ```break``` ir ```continue```
+
+
+## masyvai
 
 
