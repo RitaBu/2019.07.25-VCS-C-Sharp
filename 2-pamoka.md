@@ -264,10 +264,41 @@ for (int i = 1; i <= 10; i++)
     Console.WriteLine($"{sk} * {i} = {sk*i}");
 }
 ```
+4. Parašyti programą naudojant for ciklą, kuri prašo įvesti piramidės aukštį ir atspausdina skaičių piramidę tokiu formatu:
+
+```
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+```
+
+```c#
+Console.Write("Iveskite eiluciu skaiciu: ");
+var eiluciuSk = int.Parse(Console.ReadLine());
+int isvedamasSkaicius = 1;
+
+//einame per eilutes ir spausdiname skaicius
+for (var i = 1; i <= eiluciuSk; i++)
+{
+    //eiluteje esanciu skaiciu turi buti ne daugiau nei eilutes nr (i)
+    for (var j = 1; j <= i; j++)
+    {
+        Console.Write($"{isvedamasSkaicius} ");
+        //kaskarta isvede skaiciu, ji padidiname
+        isvedamasSkaicius++;
+    }
+
+    Console.Write("\n");
+}
+
+Console.ReadLine();
+```
 
 ## ```break``` ir ```continue```
 
 
 ## masyvai
 
+1. 
 
